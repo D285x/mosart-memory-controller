@@ -1,0 +1,17 @@
+reports/
+.Xil/
+*.jou
+*.log
+*.vvp
+*.vcd
+*.wdb
+xsim.dir/
+synth/mem_ctrl_top_netlist.v
+synth/yosys_log.txt
+report/*.aux
+report/*.toc
+report/*.lof
+report/*.lot
+report/*.out
+report/*.fls
+report/*.fdb_latexmk

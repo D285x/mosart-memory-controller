@@ -1,0 +1,4 @@
+read_verilog ../rtl/sync_mem.v ../rtl/cfg_regs.v ../rtl/mem_ctrl_fsm.v ../rtl/mem_ctrl_top.v
+synth_xilinx -family xc7 -top mem_ctrl_top -flatten
+tee -o ./yosys_utilization.txt stat
+write_verilog -noattr ./mem_ctrl_top_netlist.v

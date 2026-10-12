@@ -1,0 +1,28 @@
+
+6. Printing statistics.
+
+=== mem_ctrl_top ===
+
+   Number of wires:                130
+   Number of wire bits:            333
+   Number of public wires:          76
+   Number of public wire bits:     241
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                162
+     BUFG                            1
+     CARRY4                          1
+     FDRE                           42
+     FDSE                            2
+     IBUF                           27
+     LUT2                           21
+     LUT3                           11
+     LUT4                            4
+     LUT5                            4
+     LUT6                           19
+     MUXF7                           7
+     MUXF8                           3
+     OBUF                           19
+     RAM32M                          1
+
