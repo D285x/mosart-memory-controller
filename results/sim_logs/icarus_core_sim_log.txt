@@ -1,0 +1,26 @@
+VCD info: dumpfile mem_ctrl.vcd opened for output.
+[30000] TEST: T1 reset values of configuration registers
+    -> PASS  T1
+[71000] TEST: T2 write all 16 words, read back, zero wait states
+    -> PASS  T2
+[1030000] TEST: T3 programmable wait states 1..7
+    -> PASS  T3
+[2310000] TEST: T4 simultaneous read + write request is rejected
+    -> PASS  T4
+[2401000] TEST: T5 address limit (LIMIT = 8)
+    -> PASS  T5
+[2620000] TEST: T6 write protect
+    -> PASS  T6
+[2800000] TEST: T7 request while busy is dropped and flagged
+    -> PASS  T7
+[3080000] TEST: T8 controller disabled (EN = 0) ignores requests
+    -> PASS  T8
+[3200000] TEST: T9 reset during a transaction
+    -> PASS  T9
+[3310000] TEST: T10 constrained-random regression (500 accesses)
+    -> PASS  T10
+============================================================
+ SUMMARY: 3356 checks, 0 errors | 281 writes, 295 reads, 4 rejected
+ RESULT : ALL TESTS PASSED
+============================================================
+../tb/tb_mem_ctrl.v:286: $finish called at 36680000 (1ps)

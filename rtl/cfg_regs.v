@@ -1,7 +1,7 @@
 //============================================================================
 // Module      : cfg_regs
 // Project     : MOSART Project 8 - Programmable Memory Controller
-// Author      : Shaun Praneeth Raj
+// Author      : Shaun Praneeth Raj (24EG104B27)
 // Description : Configuration and status register bank. Programs the
 //               controller behaviour at run time.
 //
@@ -17,7 +17,6 @@
 //                 [4]    RO      -      BUSY : controller busy (live)
 //                 [7:5]  RO      0      reserved
 //============================================================================
-`timescale 1ns / 1ps
 module cfg_regs #(
     parameter ADDR_W = 4
 )(

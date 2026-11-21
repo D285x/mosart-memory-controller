@@ -1,7 +1,7 @@
 //============================================================================
 // Module      : mem_ctrl_fsm
 // Project     : MOSART Project 8 - Programmable Memory Controller
-// Author      : Shaun Praneeth Raj
+// Author      : Shaun Praneeth Raj (24EG104B27)
 // Description : Control path. Accepts one request at a time from the host,
 //               validates it, drives the memory strobes, inserts the
 //               programmed number of wait states and signals completion.
@@ -14,7 +14,6 @@
 //   ready = 1 for one cycle in DONE or ERROR (transaction finished)
 //   error = 1 for one cycle in ERROR (request rejected, memory untouched)
 //============================================================================
-`timescale 1ns / 1ps
 module mem_ctrl_fsm #(
     parameter DATA_W = 8,
     parameter ADDR_W = 4

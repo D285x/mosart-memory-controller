@@ -1,0 +1,28 @@
+MOSART P8 memory controller - EDGE Artix-7 (xc7a35tftg256-1) run summary
+Generated: 2026-11-20 12:10
+
+== Simulation ==
+Core testbench : (not found)
+                 (not found)
+Board wrapper  : (not found)
+
+== Utilization (post-route) ==
+| Slice LUTs                 |  103 |     0 |          0 |     20800 |  0.50 |
+| LUT as Logic                               |   95 |     0 |          0 |     20800 |  0.46 |
+| LUT as Memory                              |    8 |     0 |          0 |      9600 |  0.08 |
+| Slice Registers            |  114 |     0 |          0 |     41600 |  0.27 |
+| Block RAM Tile |    0 |     0 |          0 |        50 |  0.00 |
+| Bonded IOB                  |    7 |     7 |          0 |       170 |  4.12 |
+
+== Timing (50 MHz, 20 ns) ==
+WNS = 15.325 ns, TNS = 0 ns
+Estimated Fmax = 213.9 MHz (1 / (20 - WNS); an estimate, tighten the clock to confirm)
+
+== Power ==
+| Total On-Chip Power (W)  | 0.075        |
+| Dynamic (W)              | 0.003        |
+| Device Static (W)        | 0.072        |
+
+== Derived from the design ==
+Access time: 3 cycles + N wait states; request-to-ready latency 2 cycles + N
+At 50 MHz: 16.7 M accesses/s with N=0, 8.3 M accesses/s with N=3

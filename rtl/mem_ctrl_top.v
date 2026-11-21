@@ -1,13 +1,12 @@
 //============================================================================
 // Module      : mem_ctrl_top
 // Project     : MOSART Project 8 - Programmable Memory Controller
-// Author      : Shaun Praneeth Raj
+// Author      : Shaun Praneeth Raj (24EG104B27)
 // Description : Top level. Connects the configuration register bank, the
 //               controller FSM and the 16 x 8 synchronous register-array
 //               memory. All logic is in a single clock domain (clk) with a
 //               synchronous active-high reset.
 //============================================================================
-`timescale 1ns / 1ps
 module mem_ctrl_top #(
     parameter DATA_W = 8,
     parameter ADDR_W = 4

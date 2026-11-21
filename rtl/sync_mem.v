@@ -1,13 +1,12 @@
 //============================================================================
 // Module      : sync_mem
 // Project     : MOSART Project 8 - Programmable Memory Controller
-// Author      : Shaun Praneeth Raj
+// Author      : Shaun Praneeth Raj (24EG104B27)
 // Description : Single-port synchronous on-chip memory built from a register
 //               array. Write is synchronous; read data is registered, so the
 //               word addressed while mem_re is high appears on dout one clock
 //               later and is held until the next read.
 //============================================================================
-`timescale 1ns / 1ps
 module sync_mem #(
     parameter DATA_W = 8,
     parameter ADDR_W = 4

@@ -1,7 +1,7 @@
 //============================================================================
 // Testbench   : tb_mem_ctrl
 // Project     : MOSART Project 8 - Programmable Memory Controller
-// Author      : Shaun Praneeth Raj
+// Author      : Shaun Praneeth Raj (24EG104B27)
 // Description : Self-checking testbench. A behavioural reference model
 //               (model[]) mirrors every accepted write; every read and every
 //               status/config read-back is compared against it. Stimulus is
