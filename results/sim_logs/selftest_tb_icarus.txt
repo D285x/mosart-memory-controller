@@ -1,0 +1,11 @@
+outputs: mode0=0101 mode1=0101 fault=0110
+ok  : MODE=0 done
+ok  : MODE=0 pass
+ok  : MODE=1 done
+ok  : MODE=1 pass
+ok  : fault run detected
+ok  : heartbeat toggles
+ok  : reset clears done
+ok  : re-run after reset passes
+RESULT : ALL TESTS PASSED
+board/tb_edge_selftest.v:46: $finish called at 47290000 (1ps)

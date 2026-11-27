@@ -1,0 +1,23 @@
+[tasks]
+bmc
+
+[options]
+mode bmc
+depth 12
+
+[engines]
+smtbmc z3
+
+[script]
+read -formal cfg_regs.v mem_ctrl_fsm.v sync_mem.v mem_ctrl_top.v
+read -formal formal_top.sv
+chparam -set DATA_W 2 formal_top
+chparam -set ADDR_W 2 formal_top
+prep -top formal_top
+
+[files]
+../rtl/cfg_regs.v
+../rtl/mem_ctrl_fsm.v
+../rtl/sync_mem.v
+../rtl/mem_ctrl_top.v
+formal_top.sv

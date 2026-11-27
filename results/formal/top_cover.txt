@@ -1,0 +1,6 @@
+task: top_cover
+Elapsed clock time [H:MM:SS (secs)]: 0:00:02 (2)
+Elapsed process time [H:MM:SS (secs)]: 0:00:02 (2)
+engine_0 (smtbmc z3) returned pass
+trace: engine_0/trace0.vcd
+trace: engine_0/trace0.yw

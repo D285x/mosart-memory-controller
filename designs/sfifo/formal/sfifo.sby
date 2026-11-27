@@ -1,0 +1,23 @@
+[tasks]
+bmc
+cover
+
+[options]
+bmc: mode bmc
+bmc: depth 12
+cover: mode cover
+cover: depth 12
+
+[engines]
+smtbmc z3
+
+[script]
+read -formal sfifo.v
+read -formal formal_sfifo.sv
+prep -top formal_sfifo
+memory_map
+opt -fast
+
+[files]
+../rtl/sfifo.v
+formal_sfifo.sv

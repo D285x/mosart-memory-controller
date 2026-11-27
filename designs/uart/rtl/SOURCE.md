@@ -1,0 +1,1 @@
+`uart.v`, `uart_tx.v` and `uart_rx.v` are taken unchanged from verilog-uart by Alex Forencich (https://github.com/alexforencich/verilog-uart, `rtl/`, commit 1b867e53af738e4a8bc7c839ca2f1c07f40382dc), under the MIT licence reproduced in each file header.

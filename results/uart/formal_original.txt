@@ -1,0 +1,22 @@
+SBY 23:58:49 [uart_bmc] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:15 (15)
+SBY 23:58:49 [uart_bmc] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:15 (15)
+SBY 23:58:49 [uart_bmc] summary: engine_0 (smtbmc yices) returned pass
+SBY 23:58:49 [uart_bmc] summary: engine_0 did not produce any traces
+SBY 23:58:49 [uart_bmc] DONE (PASS, rc=0)
+SBY 23:59:00 [uart_cover] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:26 (26)
+SBY 23:59:00 [uart_cover] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:26 (26)
+SBY 23:59:00 [uart_cover] summary: engine_0 (smtbmc yices) returned pass
+SBY 23:59:00 [uart_cover] summary: cover trace: uart_cover/engine_0/trace0.vcd
+SBY 23:59:00 [uart_cover] summary:   reached cover statement formal_uart.$cover$formal_uart.sv:153$218 at formal_uart.sv:153.39-154.37 in step 32
+SBY 23:59:00 [uart_cover] summary: cover trace: uart_cover/engine_0/trace1.vcd
+SBY 23:59:00 [uart_cover] summary:   reached cover statement formal_uart.$cover$formal_uart.sv:154$219 at formal_uart.sv:154.38-155.21 in step 32
+SBY 23:59:00 [uart_cover] summary: cover trace: uart_cover/engine_0/trace2.vcd
+SBY 23:59:00 [uart_cover] summary:   reached cover statement formal_uart.$cover$formal_uart.sv:152$217 at formal_uart.sv:152.58-153.38 in step 37
+SBY 23:59:00 [uart_cover] summary: cover trace: uart_cover/engine_0/trace3.vcd
+SBY 23:59:00 [uart_cover] summary:   reached cover statement formal_uart.$cover$formal_uart.sv:155$220 at formal_uart.sv:155.22-156.20 in step 67
+SBY 23:59:00 [uart_cover] DONE (PASS, rc=0)
+SBY  0:01:58 [uart_deep] summary: Elapsed clock time [H:MM:SS (secs)]: 0:03:25 (205)
+SBY  0:01:58 [uart_deep] summary: Elapsed process time [H:MM:SS (secs)]: 0:03:49 (229)
+SBY  0:01:58 [uart_deep] summary: engine_0 (smtbmc yices) returned pass
+SBY  0:01:58 [uart_deep] summary: engine_0 did not produce any traces
+SBY  0:01:58 [uart_deep] DONE (PASS, rc=0)

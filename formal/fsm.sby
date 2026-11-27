@@ -1,0 +1,31 @@
+[tasks]
+bmc
+prove
+latency
+cover
+
+[options]
+bmc: mode bmc
+bmc: depth 30
+prove: mode prove
+prove: depth 20
+latency: mode bmc
+latency: depth 30
+cover: mode cover
+cover: depth 30
+
+[engines]
+bmc: smtbmc z3
+prove: smtbmc z3
+latency: smtbmc z3
+cover: smtbmc z3
+
+[script]
+read -formal mem_ctrl_fsm.v
+read -formal formal_fsm.sv
+latency: chparam -set CONST_CFG 1 formal_fsm
+prep -top formal_fsm
+
+[files]
+../rtl/mem_ctrl_fsm.v
+formal_fsm.sv

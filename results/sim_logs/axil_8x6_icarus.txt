@@ -1,0 +1,7 @@
+AXI write/read response latency at N=0: 5 cycles (controller alone: 2 cycles)
+============================================================
+ CONFIG : DATA_W=8 ADDR_W=6 NRAND=2000 SEED=7
+ SUMMARY: 4030 checks, 0 errors
+ RESULT : ALL TESTS PASSED
+============================================================
+tb/tb_axil_mem_ctrl.v:252: $finish called at 553691000 (1ps)

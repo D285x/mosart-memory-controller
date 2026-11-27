@@ -1,0 +1,2 @@
+RESULT : ALL TESTS PASSED (160 checks)
+board/tb_edge_latency.v:127: $finish called at 94670000 (1ps)

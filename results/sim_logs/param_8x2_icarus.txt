@@ -1,0 +1,86 @@
+[30000] TEST: s of the configuration registers
+    -> PASS  D1
+[71000] TEST: ead data after power-up are zero
+    -> PASS  D1b
+[190000] TEST: ead every word, zero wait states
+    -> PASS  D2
+[430000] TEST:  programmable wait states 1 to 7
+    -> PASS  D3
+[1570000] TEST: ad and write request is rejected
+    -> PASS  D4
+[1661000] TEST: t, saturation and the full range
+    -> PASS  D5
+[1931000] TEST: D6 write protect
+    -> PASS  D6
+[2110000] TEST: hile busy is dropped and flagged
+    -> PASS  D7
+[2390000] TEST: roller disabled ignores requests
+    -> PASS  D8
+[2510000] TEST: D9 reset during a transaction
+    -> PASS  D9
+[2630000] TEST: ad while busy shows the BUSY bit
+    -> PASS  D10
+[2730000] TEST: n the same cycle: the event wins
+    -> PASS  D11
+[2801000] TEST: t while disabled raises no event
+    -> PASS  D12
+[2940000] TEST: data is held until the next read
+    -> PASS  D13
+[3140000] TEST: R1 constrained-random regression
+    -> PASS  R1
+============================================================
+ CONFIG : DATA_W=8 ADDR_W=2 NRAND=3000 SEED=1
+ SUMMARY: 8708 checks, 0 errors | 312 writes, 621 reads, 1047 rejected
+---------------- functional coverage ----------------
+  HIT   read accepted                      622
+  HIT   write accepted                     312
+  HIT   read,  wait states = 0             95
+  HIT   write, wait states = 0             39
+  HIT   read,  wait states = 1             73
+  HIT   write, wait states = 1             29
+  HIT   read,  wait states = 2             60
+  HIT   write, wait states = 2             31
+  HIT   read,  wait states = 3             102
+  HIT   write, wait states = 3             58
+  HIT   read,  wait states = 4             67
+  HIT   write, wait states = 4             40
+  HIT   read,  wait states = 5             75
+  HIT   write, wait states = 5             43
+  HIT   read,  wait states = 6             54
+  HIT   write, wait states = 6             22
+  HIT   read,  wait states = 7             96
+  HIT   write, wait states = 7             50
+  HIT   address = first word               209
+  HIT   address = last word                335
+  HIT   address = interior word            390
+  HIT   address = limit - 1                108
+  HIT   error: collision                   220
+  HIT   error: out of range                514
+  HIT   error: write protect               313
+  HIT   error: overrun (busy)              49
+  HIT   status COLL seen set               2746
+  HIT   status RANGE seen set              2563
+  HIT   status WPV seen set                2139
+  HIT   status OVR seen set                1647
+  HIT   status COLL cleared (W1C)          46
+  HIT   status RANGE cleared (W1C)         38
+  HIT   status WPV cleared (W1C)           36
+  HIT   status OVR cleared (W1C)           19
+  HIT   limit = 0                          1282
+  HIT   limit partial                      2858
+  HIT   limit = full depth                 7714
+  HIT   limit write saturates              75
+  HIT   read accepted with WP = 1          328
+  HIT   request while disabled             8
+  HIT   gap 0 (back to back)               344
+  HIT   gap 1 idle cycle                   211
+  HIT   gap 2 or more idle cycles          379
+  HIT   write data all zero                21
+  HIT   write data all one                 21
+  HIT   write data mixed                   270
+  HIT   reset while busy                   1
+  COVERAGE: 47 of 47 bins hit (100 percent)
+-----------------------------------------------------
+ RESULT : ALL TESTS PASSED
+============================================================
+tb/tb_mem_ctrl_param.v:475: $finish called at 118580000 (1ps)

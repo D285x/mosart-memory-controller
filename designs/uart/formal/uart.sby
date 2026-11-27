@@ -1,0 +1,26 @@
+[tasks]
+bmc
+deep
+cover
+
+[options]
+bmc: mode bmc
+bmc: depth 40
+deep: mode bmc
+deep: depth 70
+cover: mode cover
+cover: depth 80
+
+[engines]
+smtbmc yices
+
+[script]
+read -formal uart_tx.v uart_rx.v uart.v
+read -formal formal_uart.sv
+prep -flatten -top formal_uart
+
+[files]
+../rtl/uart_tx.v
+../rtl/uart_rx.v
+../rtl/uart.v
+formal_uart.sv

@@ -1,0 +1,5 @@
+task: top_small_bmc
+Elapsed clock time [H:MM:SS (secs)]: 0:07:36 (456)
+Elapsed process time [H:MM:SS (secs)]: 0:07:30 (450)
+engine_0 (smtbmc z3) returned pass
+engine_0 did not produce any traces

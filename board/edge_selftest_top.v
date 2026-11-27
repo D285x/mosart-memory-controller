@@ -16,7 +16,7 @@
 //     6. WP=1, write address 0    -> expect error and STATUS.WPV set
 //     7. clear status, WP=0, read address 0 -> must still hold the old value
 //
-//   SERIAL_OUT[0] PASS (LED D3) steady on : all checks passed
+//   SERIAL_OUT[0] PASS      steady on : all checks passed
 //   SERIAL_OUT[1] FAIL      steady on : at least one check failed (sticky)
 //   SERIAL_OUT[2] DONE      steady on : sequence finished
 //   SERIAL_OUT[3] HEARTBEAT ~1 Hz blink : clock is running

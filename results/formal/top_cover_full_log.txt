@@ -1,0 +1,35 @@
+SBY  9:36:17 [top_cover] Removing directory '/home/claude/MemCtrl/formal/top_cover'.
+SBY  9:36:17 [top_cover] Copy '/home/claude/MemCtrl/formal/../rtl/cfg_regs.v' to '/home/claude/MemCtrl/formal/top_cover/src/cfg_regs.v'.
+SBY  9:36:17 [top_cover] Copy '/home/claude/MemCtrl/formal/../rtl/mem_ctrl_fsm.v' to '/home/claude/MemCtrl/formal/top_cover/src/mem_ctrl_fsm.v'.
+SBY  9:36:17 [top_cover] Copy '/home/claude/MemCtrl/formal/../rtl/sync_mem.v' to '/home/claude/MemCtrl/formal/top_cover/src/sync_mem.v'.
+SBY  9:36:17 [top_cover] Copy '/home/claude/MemCtrl/formal/../rtl/mem_ctrl_top.v' to '/home/claude/MemCtrl/formal/top_cover/src/mem_ctrl_top.v'.
+SBY  9:36:17 [top_cover] Copy '/home/claude/MemCtrl/formal/formal_top.sv' to '/home/claude/MemCtrl/formal/top_cover/src/formal_top.sv'.
+SBY  9:36:17 [top_cover] engine_0: smtbmc z3
+SBY  9:36:17 [top_cover] base: starting process "cd top_cover/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY  9:36:17 [top_cover] base: finished (returncode=0)
+SBY  9:36:17 [top_cover] prep: starting process "cd top_cover/model; yosys -ql design_prep.log design_prep.ys"
+SBY  9:36:17 [top_cover] prep: finished (returncode=0)
+SBY  9:36:17 [top_cover] smt2: starting process "cd top_cover/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY  9:36:17 [top_cover] smt2: finished (returncode=0)
+SBY  9:36:17 [top_cover] engine_0: starting process "cd top_cover; yosys-smtbmc -s z3 --presat -c --noprogress -t 34  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2"
+SBY  9:36:17 [top_cover] engine_0: ##   0:00:00  Solver: z3
+SBY  9:36:17 [top_cover] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY  9:36:19 [top_cover] engine_0: ##   0:00:01  Checking cover reachability in step 1..
+SBY  9:36:19 [top_cover] engine_0: ##   0:00:01  Checking cover reachability in step 2..
+SBY  9:36:19 [top_cover] engine_0: ##   0:00:01  Checking cover reachability in step 3..
+SBY  9:36:19 [top_cover] engine_0: ##   0:00:01  Checking cover reachability in step 4..
+SBY  9:36:19 [top_cover] engine_0: ##   0:00:01  Checking cover reachability in step 5..
+SBY  9:36:19 [top_cover] engine_0: ##   0:00:01  Checking cover reachability in step 6..
+SBY  9:36:19 [top_cover] engine_0: ##   0:00:01  Reached cover statement at formal_top.sv:82.60-83.20 ($cover$formal_top.sv:82$71) in step 6.
+SBY  9:36:19 [top_cover] engine_0: ##   0:00:01  Writing trace to VCD file: engine_0/trace0.vcd
+SBY  9:36:19 [top_cover] engine_0: ##   0:00:01  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY  9:36:19 [top_cover] engine_0: ##   0:00:01  Writing trace to constraints file: engine_0/trace0.smtc
+SBY  9:36:19 [top_cover] engine_0: ##   0:00:01  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY  9:36:19 [top_cover] engine_0: ##   0:00:01  Status: passed
+SBY  9:36:19 [top_cover] engine_0: finished (returncode=0)
+SBY  9:36:19 [top_cover] engine_0: Status returned by engine: pass
+SBY  9:36:19 [top_cover] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:02 (2)
+SBY  9:36:19 [top_cover] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:02 (2)
+SBY  9:36:19 [top_cover] summary: engine_0 (smtbmc z3) returned pass
+SBY  9:36:19 [top_cover] summary: trace: top_cover/engine_0/trace0.vcd
+SBY  9:36:19 [top_cover] DONE (PASS, rc=0)

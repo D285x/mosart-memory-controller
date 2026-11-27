@@ -1,0 +1,19 @@
+SBY 23:58:30 [sfifo_cover] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 23:58:30 [sfifo_cover] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 23:58:30 [sfifo_cover] summary: engine_0 (smtbmc z3) returned pass
+SBY 23:58:30 [sfifo_cover] summary: cover trace: sfifo_cover/engine_0/trace0.vcd
+SBY 23:58:30 [sfifo_cover] summary:   reached cover statement formal_sfifo.$cover$formal_sfifo.sv:71$81 at formal_sfifo.sv:71.24-72.43 in step 3
+SBY 23:58:30 [sfifo_cover] summary: cover trace: sfifo_cover/engine_0/trace1.vcd
+SBY 23:58:30 [sfifo_cover] summary:   reached cover statement formal_sfifo.$cover$formal_sfifo.sv:70$80 at formal_sfifo.sv:70.60-71.23 in step 6
+SBY 23:58:30 [sfifo_cover] summary: cover trace: sfifo_cover/engine_0/trace2.vcd
+SBY 23:58:30 [sfifo_cover] summary:   reached cover statement formal_sfifo.$cover$formal_sfifo.sv:73$83 at formal_sfifo.sv:73.37-74.42 in step 6
+SBY 23:58:30 [sfifo_cover] summary: cover trace: sfifo_cover/engine_0/trace3.vcd
+SBY 23:58:30 [sfifo_cover] summary:   reached cover statement formal_sfifo.$cover$formal_sfifo.sv:72$82 at formal_sfifo.sv:72.44-73.36 in step 6
+SBY 23:58:30 [sfifo_cover] summary: cover trace: sfifo_cover/engine_0/trace4.vcd
+SBY 23:58:30 [sfifo_cover] summary:   reached cover statement formal_sfifo.$cover$formal_sfifo.sv:74$84 at formal_sfifo.sv:74.43-75.31 in step 8
+SBY 23:58:30 [sfifo_cover] DONE (PASS, rc=0)
+SBY 23:58:33 [sfifo_bmc] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:03 (3)
+SBY 23:58:33 [sfifo_bmc] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:04 (4)
+SBY 23:58:33 [sfifo_bmc] summary: engine_0 (smtbmc z3) returned pass
+SBY 23:58:33 [sfifo_bmc] summary: engine_0 did not produce any traces
+SBY 23:58:33 [sfifo_bmc] DONE (PASS, rc=0)
